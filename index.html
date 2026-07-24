@@ -7,6 +7,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Work+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
 <style>
   :root{
     --bone:#FBEEF5;
@@ -250,7 +251,7 @@
       <a href="#shop">Shop</a>
       <a href="#party">Parties</a>
     </div>
-    <a href="#book" class="nav-cta">Book a consult</a>
+    <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/kathrynbkidd/30min'});return false;" class="nav-cta">Book a consult</a>
   </nav>
 </header>
 
@@ -261,7 +262,7 @@
       <h1>Feel like the <em>most confident</em> version of you.</h1>
       <p class="sub">I'm Kat — a registered nurse bringing thoughtful, conservative Botox straight to you. Subtle results, real conversations, nothing rushed.</p>
       <div class="hero-ctas">
-        <a href="#book" class="btn-primary">Book a free consult</a>
+        <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/kathrynbkidd/30min'});return false;" class="btn-primary">Book a free consult</a>
         <a href="#services" class="btn-ghost">See services</a>
       </div>
     </div>
@@ -410,7 +411,7 @@
     <p class="eyebrow">Get together</p>
     <h2 style="font-size:clamp(28px,3.2vw,40px); margin-top:14px; line-height:1.15;">Want to host a Botox party?</h2>
     <p style="color:var(--ink-soft); font-size:16.5px; margin-top:16px; line-height:1.6;">Gather a few friends, and I'll bring the appointment to you — private consults for everyone, all in one afternoon. As the host, you'll earn free units toward your own treatment. Reach out and we'll talk through what works for your group.</p>
-    <a href="#" class="btn-ghost" style="margin-top:24px; display:inline-block;">Let's connect about hosting →</a>
+    <a href="mailto:hello@toxbykat.com?subject=Hosting a Botox party" class="btn-ghost" style="margin-top:24px; display:inline-block;">Let's connect about hosting →</a>
   </div>
 </section>
 
@@ -420,7 +421,7 @@
   <div class="wrap">
     <p class="eyebrow">Consults are free · I come to you</p>
     <h2>Let's talk before we do anything.</h2>
-    <a href="#" class="btn-primary">Book your consult</a>
+    <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/kathrynbkidd/30min'});return false;" class="btn-primary">Book your consult</a>
   </div>
 </section>
 
@@ -468,6 +469,8 @@
     setTimeout(()=>{ path.setAttribute('d', smoothD); }, 900);
   });
 </script>
+
+<script src="https://assets.calendly.com/assets/external/widget.js"></script>
 
 </body>
 </html>
