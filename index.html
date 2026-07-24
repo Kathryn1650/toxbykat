@@ -248,8 +248,9 @@
       <a href="#philosophy">Philosophy</a>
       <a href="#services">Services</a>
       <a href="#journal">Journal</a>
-      <a href="#shop">Shop</a>
+      <a href="#referral">Referral</a>
       <a href="#party">Parties</a>
+      <a href="#join">Join</a>
     </div>
     <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/kathrynbkidd/30min'});return false;" class="nav-cta">Book a consult</a>
   </nav>
@@ -370,41 +371,26 @@
   </div>
 </section>
 
-<section class="shop" id="shop">
-  <div class="wrap">
-    <div class="section-head">
-      <p class="eyebrow">What I recommend</p>
-      <h2>Products I actually use and trust.</h2>
-      <p>A small, honest list — things I recommend to clients after their appointment, not a full shelf of everything.</p>
-    </div>
-    <div class="shop-grid">
-      <div class="product-card">
-        <div class="product-swatch swatch1"></div>
-        <p class="eyebrow">Skincare</p>
-        <h4>Mineral SPF 50</h4>
-        <p>What I tell every preventative client to buy first — before any injectable.</p>
+<section id="referral" style="padding:88px 0;">
+  <div class="wrap" style="max-width:760px; text-align:center;">
+    <p class="eyebrow">Share the love</p>
+    <h2 style="font-size:clamp(28px,3.2vw,40px); margin-top:14px; line-height:1.15;">Refer a friend, you both win.</h2>
+    <p style="color:var(--ink-soft); font-size:16.5px; margin-top:16px; line-height:1.6; max-width:52ch; margin-left:auto; margin-right:auto;">Send a friend my way — once they book their first treatment, you each get 5 free units toward your next visit.</p>
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:20px; margin-top:36px; max-width:520px; margin-left:auto; margin-right:auto;">
+      <div style="background:var(--paper); border:1px solid var(--line); border-radius:14px; padding:28px 20px;">
+        <p style="font-family:'Fraunces', serif; font-size:28px; font-weight:500; margin:0; color:var(--forest);">5 units</p>
+        <p style="font-size:14px; color:var(--ink-soft); margin-top:8px;">for you, the referrer</p>
       </div>
-      <div class="product-card">
-        <div class="product-swatch swatch2"></div>
-        <p class="eyebrow">Skincare</p>
-        <h4>Peptide Serum</h4>
-        <p>Pairs well with treatment cycles; not a substitute for one.</p>
-      </div>
-      <div class="product-card">
-        <div class="product-swatch swatch3"></div>
-        <p class="eyebrow">Aftercare</p>
-        <h4>Arnica Recovery Balm</h4>
-        <p>For bruising after injection — gentle, unscented.</p>
-      </div>
-      <div class="product-card">
-        <div class="product-swatch swatch4"></div>
-        <p class="eyebrow">Wellness</p>
-        <h4>Collagen Support</h4>
-        <p>A long-game recommendation, not a quick fix.</p>
+      <div style="background:var(--paper); border:1px solid var(--line); border-radius:14px; padding:28px 20px;">
+        <p style="font-family:'Fraunces', serif; font-size:28px; font-weight:500; margin:0; color:var(--forest);">5 units</p>
+        <p style="font-size:14px; color:var(--ink-soft); margin-top:8px;">for your friend</p>
       </div>
     </div>
+    <p style="font-size:13px; color:var(--ink-soft); margin-top:20px;">Credit applies toward your next appointment — no limit on how many friends you refer.</p>
   </div>
 </section>
+
+<hr class="divider">
 
 <section id="party" style="text-align:center; padding:88px 0;">
   <div class="wrap" style="max-width:640px;">
@@ -412,6 +398,22 @@
     <h2 style="font-size:clamp(28px,3.2vw,40px); margin-top:14px; line-height:1.15;">Want to host a Botox party?</h2>
     <p style="color:var(--ink-soft); font-size:16.5px; margin-top:16px; line-height:1.6;">Gather a few friends, and I'll bring the appointment to you — private consults for everyone, all in one afternoon. As the host, you'll earn free units toward your own treatment. Reach out and we'll talk through what works for your group.</p>
     <a href="mailto:hello@toxbykat.com?subject=Hosting a Botox party" class="btn-ghost" style="margin-top:24px; display:inline-block;">Let's connect about hosting →</a>
+  </div>
+</section>
+
+<hr class="divider">
+
+<section id="join" style="background:var(--paper); padding:88px 0; text-align:center;">
+  <div class="wrap" style="max-width:560px;">
+    <p class="eyebrow">Join the list</p>
+    <h2 style="font-size:clamp(28px,3.2vw,40px); margin-top:14px; line-height:1.15;">Join the girl gang.</h2>
+    <p style="color:var(--ink-soft); font-size:16.5px; margin-top:16px; line-height:1.6;">Drop your email for first dibs on promos, party dates, and the occasional friend-of-a-friend discount.</p>
+    <form name="girl-gang" method="POST" data-netlify="true" netlify-honeypot="bot-field" style="margin-top:28px; display:flex; gap:10px; max-width:420px; margin-left:auto; margin-right:auto; flex-wrap:wrap;">
+      <input type="hidden" name="form-name" value="girl-gang">
+      <p style="position:absolute; left:-9999px;"><label>Don't fill this out: <input name="bot-field"></label></p>
+      <input type="email" name="email" required placeholder="your@email.com" style="flex:1; min-width:180px; padding:12px 16px; border-radius:14px; border:1px solid var(--line); font-family:'Work Sans', sans-serif; font-size:15px;">
+      <button type="submit" class="btn-primary" style="background:var(--clay);">Join</button>
+    </form>
   </div>
 </section>
 
@@ -438,7 +440,7 @@
         <a href="#philosophy">Philosophy</a>
         <a href="#services">Services</a>
         <a href="#journal">Journal</a>
-        <a href="#shop">Shop</a>
+        <a href="#referral">Referral</a>
       </div>
       <div class="foot-col">
         <h5>Follow</h5>
