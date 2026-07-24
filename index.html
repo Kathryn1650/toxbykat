@@ -252,7 +252,10 @@
       <a href="#party">Parties</a>
       <a href="#join">Join</a>
     </div>
-    <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/kathrynbkidd/30min'});return false;" class="nav-cta">Book a consult</a>
+    <div style="display:flex; align-items:center; gap:16px; flex-wrap:wrap; justify-content:flex-end;">
+      <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/kathrynbkidd/book-a-visit'});return false;" style="font-family:'IBM Plex Mono', monospace; font-size:12.5px; color:var(--ink-soft); border-bottom:1px solid var(--line);">Returning? Book now</a>
+      <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/kathrynbkidd/30min'});return false;" class="nav-cta">Book a consult</a>
+    </div>
   </nav>
 </header>
 
@@ -266,6 +269,7 @@
         <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/kathrynbkidd/30min'});return false;" class="btn-primary">Book a free consult</a>
         <a href="#services" class="btn-ghost">See services</a>
       </div>
+      <p style="margin-top:16px; font-size:14px; color:var(--ink-soft);">Been here before? <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/kathrynbkidd/book-a-visit'});return false;" style="border-bottom:1px solid var(--ink-soft);">Book your next visit</a></p>
     </div>
     <div class="line-panel">
       <svg id="lineSvg" viewBox="0 0 420 200" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -309,7 +313,7 @@
         <div class="mark">＊ start here</div>
         <div>
           <h3>Consultation</h3>
-          <p>A real conversation before anything else — what you want, and an honest plan for getting there.</p>
+          <p>A real conversation before anything else — your goals, your concerns, and a rough sense of what treatment could look like. The exact plan is finalized at your visit.</p>
         </div>
       </div>
       <div class="service-card">
@@ -343,24 +347,24 @@
   <div class="wrap">
     <div class="section-head">
       <p class="eyebrow">The journal</p>
-      <h2>Notes on prevention, timing, and what's actually in the syringe.</h2>
+      <h2>Notes on natural results, common myths, and what to expect.</h2>
     </div>
     <div class="journal-grid">
-      <a class="post-card reveal" href="#">
+      <a class="post-card reveal" href="journal-natural.html">
         <div class="thumb t1"></div>
         <p class="eyebrow">Getting started</p>
         <h3>What "natural" actually means in Botox</h3>
         <p>The goal isn't fewer lines — it's a face that still looks like yours.</p>
         <span class="read">Read the post →</span>
       </a>
-      <a class="post-card reveal" href="#">
+      <a class="post-card reveal" href="journal-myths.html">
         <div class="thumb t2"></div>
         <p class="eyebrow">Myths</p>
         <h3>No, you won't look frozen. Here's why that fear exists.</h3>
         <p>Most "frozen" results come from overdosing, not from Botox itself.</p>
         <span class="read">Read the post →</span>
       </a>
-      <a class="post-card reveal" href="#">
+      <a class="post-card reveal" href="journal-consult.html">
         <div class="thumb t3"></div>
         <p class="eyebrow">Process</p>
         <h3>What actually happens during a consult</h3>
@@ -424,6 +428,7 @@
     <p class="eyebrow">Consults are free · I come to you</p>
     <h2>Let's talk before we do anything.</h2>
     <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/kathrynbkidd/30min'});return false;" class="btn-primary">Book your consult</a>
+    <p style="margin-top:18px; font-size:14px; color:#E8D9F0;">Been here before? <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/kathrynbkidd/book-a-visit'});return false;" style="border-bottom:1px solid #E8D9F0; color:var(--bone);">Book your next visit</a></p>
   </div>
 </section>
 
