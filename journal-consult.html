@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>What actually happens during a consult — ToxByKat</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Work+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bone:#FBEEF5; --paper:#FFF6FA; --ink:#3E2A47; --ink-soft:#8A6E8D;
+    --forest:#8B5FA8; --forest-deep:#6B4485; --clay:#E8729E; --clay-soft:#F2A6C4;
+    --sage:#D9AEE8; --line:#F5DCEA; --max:1180px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  @media (prefers-reduced-motion: reduce){ *{animation-duration:0.001ms !important; transition-duration:0.001ms !important;} }
+  body{margin:0; background:var(--bone); color:var(--ink); font-family:'Work Sans', sans-serif; font-weight:400; line-height:1.5; -webkit-font-smoothing:antialiased;}
+  a{color:inherit; text-decoration:none;}
+  .wrap{max-width:var(--max); margin:0 auto; padding:0 32px;}
+  .eyebrow{font-family:'IBM Plex Mono', monospace; font-size:12px; letter-spacing:0.14em; text-transform:uppercase; color:var(--forest);}
+  h1,h2,h3{margin:0; font-family:'Fraunces', serif; font-weight:500; color:var(--ink);}
+  em{font-style:italic; color:var(--forest);}
+  :focus-visible{outline:2px solid var(--clay); outline-offset:3px;}
+  header{position:sticky; top:0; z-index:50; background:rgba(251,238,245,0.88); backdrop-filter:blur(8px); border-bottom:1px solid var(--line);}
+  nav.wrap{display:flex; align-items:center; justify-content:space-between; padding-top:20px; padding-bottom:20px;}
+  .logo{font-family:'Fraunces', serif; font-size:22px; font-weight:600;}
+  .logo span{color:var(--clay); font-style:italic; font-weight:400;}
+  .nav-cta{font-family:'IBM Plex Mono', monospace; font-size:12.5px; border:1px solid var(--ink); padding:9px 18px; border-radius:14px; transition:background 0.2s ease, color 0.2s ease;}
+  .nav-cta:hover{background:var(--ink); color:var(--bone);}
+  .back-link{font-family:'IBM Plex Mono', monospace; font-size:13px; color:var(--ink-soft); display:inline-block; margin:40px 0 20px;}
+  .post-hero{aspect-ratio:16/7; border-radius:14px; margin:0 0 40px; background:linear-gradient(135deg,#E6C9E0,#8A6E8D);}
+  article{max-width:680px; margin:0 auto; padding:0 32px 100px;}
+  article h1{font-size:clamp(32px,4vw,48px); line-height:1.1; margin-bottom:16px;}
+  article .meta{color:var(--ink-soft); font-size:14px; margin-bottom:32px;}
+  article p{font-size:18px; color:var(--ink); line-height:1.75; margin:0 0 24px;}
+  .steps{margin:32px 0; padding:0; list-style:none; counter-reset:step;}
+  .steps li{counter-increment:step; display:flex; gap:20px; margin-bottom:32px;}
+  .steps .num{font-family:'Fraunces', serif; font-style:italic; font-size:22px; color:var(--clay); min-width:32px;}
+  .steps .num::before{content:counter(step);}
+  .steps h3{font-size:19px; margin-bottom:8px;}
+  .steps p{font-size:16px; margin:0; color:var(--ink-soft);}
+  .cta-box{background:var(--paper); border:1px solid var(--line); border-radius:14px; padding:32px; text-align:center; margin-top:56px;}
+  .cta-box h3{font-size:22px; margin-bottom:12px;}
+  .cta-box p{font-size:15px; margin-bottom:20px;}
+  .btn-primary{font-family:'IBM Plex Mono', monospace; font-size:13px; letter-spacing:0.04em; background:var(--forest); color:var(--bone); padding:14px 26px; border-radius:14px; display:inline-block; transition:background 0.2s ease;}
+  .btn-primary:hover{background:var(--forest-deep);}
+  footer{padding:56px 0 40px; border-top:1px solid var(--line); text-align:center;}
+  footer p{font-size:13px; color:var(--ink-soft);}
+</style>
+</head>
+<body>
+
+<header>
+  <nav class="wrap">
+    <a href="index.html" class="logo">TOX<span>ByKat</span></a>
+    <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/kathrynbkidd/30min'});return false;" class="nav-cta">Book a consult</a>
+  </nav>
+</header>
+
+<article>
+  <a href="index.html#journal" class="back-link">← Back to the journal</a>
+  <div class="post-hero"></div>
+  <p class="eyebrow">Process</p>
+  <h1>What actually happens during a consult</h1>
+  <p class="meta">By Kat, RN</p>
+
+  <p>A common question I get: how much of this is decided on the day of the consult versus the day of treatment? Here's an honest walkthrough of both — and if you've already been through a consult with me before, scroll to the bottom for how to skip straight to booking your next visit.</p>
+
+  <h2 style="margin:44px 0 8px;">The consult</h2>
+  <p style="color:var(--ink-soft); font-size:15px; margin-bottom:24px;">A free, no-pressure conversation — no needles involved.</p>
+
+  <ul class="steps">
+    <li>
+      <span class="num"></span>
+      <div>
+        <h3>We talk first</h3>
+        <p>Before anything else, I ask what's actually bothering you — and just as importantly, what isn't. Some people want everything softened; others just want one specific line addressed. There's no assumption either way.</p>
+      </div>
+    </li>
+    <li>
+      <span class="num"></span>
+      <div>
+        <h3>You get a rough estimate</h3>
+        <p>Based on that conversation, I'll give you a general, "probable" sense of what treatment might look like — but nothing is finalized here. The exact plan gets built at your treatment visit, once I can actually see how your muscles move that day.</p>
+      </div>
+    </li>
+  </ul>
+
+  <h2 style="margin:44px 0 8px;">The treatment visit</h2>
+  <p style="color:var(--ink-soft); font-size:15px; margin-bottom:24px;">This is where the real mapping and the injections happen.</p>
+
+  <ul class="steps">
+    <li>
+      <span class="num"></span>
+      <div>
+        <h3>I map your movement</h3>
+        <p>I'll ask you to raise your brows, frown, and smile naturally while I watch how your muscles actually move that day. This is where your exact plan gets built — not from the earlier estimate alone, but from what I see in front of me.</p>
+      </div>
+    </li>
+    <li>
+      <span class="num"></span>
+      <div>
+        <h3>We confirm the plan before I pick up a needle</h3>
+        <p>I'll walk you through the exact units I'm recommending and why, so there are no surprises. If you want to go more conservative, we adjust — it's your face and your call.</p>
+      </div>
+    </li>
+    <li>
+      <span class="num"></span>
+      <div>
+        <h3>The treatment itself</h3>
+        <p>Quick — most appointments take 15 to 30 minutes total, and the injections themselves are done in just a few minutes. Everything is single-use and sterile, prepped fresh at your location.</p>
+      </div>
+    </li>
+    <li>
+      <span class="num"></span>
+      <div>
+        <h3>Aftercare</h3>
+        <p>I'll send you home with simple aftercare notes — avoid touching the treated area for a few hours, skip intense exercise for the rest of the day, and stay upright for the first four hours. Results typically show up within three to five days, fully settled by two weeks.</p>
+      </div>
+    </li>
+  </ul>
+
+  <p>Already had your consult and just need to book your next treatment? You don't need to go through the intro conversation again — head straight to booking a visit below.</p>
+
+  <div class="cta-box">
+    <h3>Ready to see what your plan would look like?</h3>
+    <p>Consults are free, and there's no obligation to book treatment afterward.</p>
+    <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/kathrynbkidd/30min'});return false;" class="btn-primary">Book a free consult</a>
+    <p style="margin-top:16px; margin-bottom:0; font-size:14px;">Returning client? <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/kathrynbkidd/book-a-visit'});return false;" style="border-bottom:1px solid var(--ink-soft); color:var(--ink);">Book your next visit</a></p>
+  </div>
+</article>
+
+<footer>
+  <p>© 2026 ToxByKat — Aesthetic Nursing</p>
+</footer>
+
+<script src="https://assets.calendly.com/assets/external/widget.js"></script>
+
+</body>
+</html>
